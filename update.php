@@ -36,7 +36,7 @@ if(isset($_POST['update'])){
     $password=$_POST['password'];
     $upd=$connect->query("UPDATE curry set names='$names',gender='$gender' ,password='$password' where hoop_id=$hoop_id");
     if($upd){
-        header("location:nsert.php");
+        header("location:display.php");
     }
 }
 
