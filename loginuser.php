@@ -10,6 +10,7 @@
                password:<br><input type="text" name="password" placeholder="password"><br><br>
             <button name="login">login</button>
         </form>
+        <a href="insert.php">create an account</a>
     </body>
 </html>
 
