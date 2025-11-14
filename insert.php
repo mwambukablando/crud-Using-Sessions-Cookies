@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     if($insert){
         
         echo "the user inserted";
-        header("location:loginuser.php");
+        header("location:display.php");
     }
     else{
         echo "user not inserted";
