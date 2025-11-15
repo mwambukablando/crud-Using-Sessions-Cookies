@@ -1,6 +1,14 @@
 
 
 <?php
+ session_start();
+
+if($_SESSION['names']){
+}else{
+    header('location:loginuser.php');
+    
+}
+
 $connect=new mysqli("localhost","root","","night");
 if(isset($_GET['hoop_id'])){
     $hoop_id=$_GET['hoop_id'];
@@ -21,6 +29,7 @@ if(isset($_GET['hoop_id'])){
         </title>
     </head>
     <body>
+        <h2>the user <?php echo $_SESSION['names'];?> is logged in</h2>
         <form action="" method="POST">
             names:<input type="text" name="names" value="<?php echo $names?>"><br>
             gender:<input type="text" name="gender"  value="<?php echo $gender?>"><br>

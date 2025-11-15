@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
             hoop_id:<br><input type="number" name="hoop_id" placeholder="hoop_id"><br>
             names:<br><input type="text" name="names" placeholder="names"><br>
             gender:<br><input type="text" name="gender" placeholder="gender"><br>
-               password:<br><input type="text" name="password" placeholder="password"><br><br>
+               password:<br><input type="password" name="password" placeholder="password"><br><br>
             <button name="submit">submit</button>
         </form>
     </body>
