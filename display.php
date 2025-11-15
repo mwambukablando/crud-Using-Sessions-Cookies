@@ -2,12 +2,9 @@
  session_start();
 
 if($_SESSION['names']){
-      header('location:loginuser.php');
-    exit();
-    
 }else{
-
-  
+    header('location:loginuser.php');
+    
 }
 
 ?>
