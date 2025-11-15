@@ -1,13 +1,24 @@
 <?php
  session_start();
 
+
 if($_SESSION['names']){
 }else{
     header('location:loginuser.php');
     
 }
 
+if($_COOKIE['names']) {
+
+}
+else{
+    header('location:loginuser.php');
+}
+
+
 ?>
+
+
 <html>
     <head>
         <title>
@@ -16,7 +27,8 @@ if($_SESSION['names']){
     </head>
     <body>
       
-      <h2>the user <?php echo $_SESSION['names'];?> is logged in</h2>
+      <h2>the user is <?php echo $_COOKIE['names'];?> logged in as cookie</h2>
+      <h2>the user is <?php echo $_SESSION['names'];?> logged in as session</h2>
     
  
     <table border=2>

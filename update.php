@@ -4,9 +4,18 @@
  session_start();
 
 if($_SESSION['names']){
+
 }else{
     header('location:loginuser.php');
     
+}
+
+
+if($_COOKIE['names']) {
+
+}
+else{
+    header('location:loginuser.php');
 }
 
 $connect=new mysqli("localhost","root","","night");

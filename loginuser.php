@@ -25,7 +25,7 @@ if(isset($_POST['login'])){
     if($num>0){
         session_start();
         $_SESSION['names'] = $_POST['names'];
-   
+        setcookie("names", $names, time() + (86400 * 30), "/");
         header("location:display.php");
     }
     else{
